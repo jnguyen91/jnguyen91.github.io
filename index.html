@@ -1,9 +1,331 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if IE 9]>    <html class="no-js ie9" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--> <html> <!--<![endif]-->
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
-    <meta name="description" content="Jeffrey Nguyen Portfolio">
-    <meta name="keywords" content="amelia,yap,ubc,portfolio,computer,science,resume,student,developer">
+    <meta name="description" content="Jeff Nguyen's Portfolio">
     <meta name="author" content="">
 
     <link rel="icon" type="image/png" href="favicon.png" />
     <title>Jeffrey Nguyen</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+ 
+    <!-- Custom Google Web Font -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Arvo:400,700' rel='stylesheet' type='text/css'>
+	
+    <!-- Custom CSS-->
+    <link href="css/general.css" rel="stylesheet">
+    <link href="css/snowflake.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/flickity.css" media="screen">
+	
+	<link href="css/custom.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/animate.css" rel="stylesheet">
+	
+	<!-- Magnific Popup core CSS file -->
+	<link rel="stylesheet" href="css/magnific-popup.css"> 
+	
+	<script src="js/modernizr-2.8.3.min.js"></script>  <!-- Modernizr /-->
+	<!--[if IE 9]>
+		<script src="js/PIE_IE9.js"></script>
+	<![endif]-->
+	<!--[if lt IE 9]>
+		<script src="js/PIE_IE678.js"></script>
+	<![endif]-->
+
+	<!--[if lt IE 9]>
+		<script src="js/html5shiv.js"></script>
+	<![endif]-->
+
+	<!-- Google Analytics -->
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-83260702-1', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
+</head>
+
+<body id="home">
+	<!-- Preloader -->
+	<div id="preloader">
+		<div id="status"></div>
+	</div>
+	
+	<!-- FullScreen -->
+    <div id="content" class="intro-header">
+
+	<canvas id="snowflakeContainer"></canvas>
+
+		<div class="col-xs-12 text-center abcen1">
+			<h3 class="h1_home wow fadeIn" data-wow-delay="0.4s">Hi, I'm Amelia</h3>
+			<li class="social"> 
+					<a href="https://www.linkedin.com/in/jeffreynguyen01/"><i class="fa fa-linkedin-square fa-3x"> </i> </a> 
+					<a href="https://github.com/jnguyen91"><i class="fa fa-github-square fa-3x"> </i></a>
+			</li>
+		</div>    
+        <!-- /.container -->
+		<div class="col-xs-12 text-center abcen wow fadeIn">
+			<div class="button_down "> 
+				<a class="imgcircle wow bounceInUp" data-wow-duration="1.5s"  href="#about"> <img class="img_scroll" src="img/icon/circle.png" alt=""> </a>
+			</div>
+		</div>
+    </div>
+
+	<!-- NavBar-->
+	<nav class="navbar-default" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#home">Jeffrey Nguyen</a>
+			</div>
+
+			<div class="collapse navbar-collapse navbar-right navbar-ex1-collapse">
+				<ul class="nav navbar-nav">
+					<li class="menuItem"><a href="#about">About</a></li>
+					<li class="menuItem"><a href="#experience">Experience</a></li>
+					<li class="menuItem"><a href="#contact">Contact</a></li>
+				</ul>
+			</div>
+		   
+		</div>
+	</nav> 
+	
+	<!-- About -->
+	<div id="about" class="content-section-b" style="border-top: 0">
+		<div class="container">
+
+			<div class="col-md-6 col-md-offset-3 text-center wrap_title">
+				<h2>About Me</h2>				
+			</div>
+			
+			<div class="row">
+			
+				<div class="col-sm-4 wow fadeInDown text-center">
+				  <img class="rotate" src="img/icon/yap.png" alt="Generic placeholder image">
+				  <h3>This is Me</h3>
+				  <p class="lead" display="inline-block">Welcome to my website!</p>
+				</div>
+
+				<div class="col-sm-4 wow fadeInDown text-center">
+				  <img  class="rotate" src="img/icon/UBC.png" alt="Generic placeholder image">
+				   <h3>Education</h3>
+				   <p class="lead">BCIT Computer Systems Technology Database Option Graduate.</p>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	
+	<!-- Experience -->
+    <div id ="experience" class="content-section-a">
+        <div class="container">
+            <div class="row">
+
+	            <div class="col-md-6 col-md-offset-3 text-center wrap_title">
+					<h2>Work Experience</h2>
+					<p class="lead" style="margin-top:0">Places where I have worked.</p>
+				 </div>
+
+			<div class="row tworow">
+				 <div class="col-sm-6 col-md-offset-3 block wow bounceIn">
+						<div class="row">
+							<div class="col-md-4 box-icon rotate"> 
+					  			<img class="rotate" src="img/icon/UBCsmaller.png" alt="Generic placeholder image">				
+							</div>
+							<div class="col-md-8 box-ct job">
+								<a href="https://www.ubc.ca" target="_blank"><h3> Undergraduate Teaching Assistant </h3></a>
+								<p> University of British Columbia (January 2017 - Present)</p>
+							</div>
+					  </div>
+				 </div>
+			</div>
+
+			<div class="row tworow">
+	           	<div class="col-sm-6 col-md-offset-3 block wow bounceIn">
+						<div class="row">
+							<div class="col-md-4 box-icon rotate"> 
+					  			<img class="rotate" src="img/icon/enoc.png" alt="Generic placeholder image">				
+							</div>
+							<div class="col-md-8 box-ct job">
+								<a href="https://www.enernoc.com/" target="_blank"><h3> Software Developer In Test Intern</h3></a>
+								<p> EnerNOC (May - August 2016)</p>
+							</div>
+					  	</div>
+				 	</div>
+      			</div>
+      		</div>
+ 
+		    <div class="row tworow">
+				  <div class="col-sm-6 col-md-offset-3 block wow bounceIn">
+				  	<div class="row">
+				  		<div class="col-md-4 box-icon rotate"> 
+				    			<img class="rotate" src="img/icon/gr.png" alt="Generic placeholder image">				
+						</div>
+					  	<div class="col-md-8 box-ct job">
+						  	<a href="https://www.globalrelay.com/" target="_blank"><h3> QA Analyst Co-op</h3></a>
+						  	<p> Global Relay (January - April 2016) </p>
+						  </div>
+				    </div>
+		  	    </div>
+		    </div>
+
+		    <div class="tworow">
+				<div class="col-sm-6 col-md-offset-3 block wow bounceIn">
+					<div class="row">
+						<div class="col-md-4 box-icon rotate"> 
+				  			<img class="rotate" src="img/icon/sap.png" alt="Generic placeholder image">				
+						</div>
+						<div class="col-md-8 box-ct job">
+							<a href="http://go.sap.com/index.html" target="_blank"><h3> Associate Support Engineer Intern</h3></a>
+							<p> SAP (January - August 2015)</p>
+						</div>
+				  </div>
+			  </div>
+		    </div>
+
+		<div class="morph-button wow pulse morph-button-inflow morph-button-inflow-1 animated animated" style="visibility: invisible;">
+			<button type="button "><span></span></button>
+		</div>
+
+		</div>
+	</div>
+
+    </div>
+
+	<!-- projects -->
+	<div id="projects" class="content-section-b">
+		<div class="container">
+			<div class="row">
+			<div class="row">
+			<div class="col-md-6 col-md-offset-3 text-center wrap_title">
+				<h2>Side Projects</h2>
+				<p class="lead" style="margin-top:0">Tap on a project to find out more.</p>
+			</div>
+			</div>
+
+				<div class="gallery js-flickity">
+					  <div class="carousel-cell vibernate">
+						  	<a href="https://play.google.com/store/apps/details?id=com.napontaratan.vibernate&hl=en" target="_blank">
+						  		<img src="img/transparent.png">
+						  	</a>
+					  </div>
+					  <div class="carousel-cell fitfrog">
+						  	<a href="http://devpost.com/software/frogfit" target="_blank">
+						  		<img src="img/transparent.png">
+						  	</a>
+					  </div>
+					  <div class="carousel-cell grouple">
+						  	<a href="http://global.datafest.net/a/datafest.net/globalurbandatafest/projects/grouple" target="_blank">
+							  	<img src="img/transparent.png">
+							</a>
+					  </div>
+		  		</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- Contact -->
+	<div id="contact" class="content-section-a">
+		<div class="container">
+			<div class="row">
+			
+				<div class="col-md-6 col-md-offset-3 text-center wrap_title">
+					<h2>Contact Me</h2>
+					<p class="lead" style="margin-top:0">Send me an email - I'd love to hear from you!</p>
+				</div>
+
+			</div>
+
+			<li class="social mailing"> 
+					<a href="mailto:amelia_ylh@hotmail.com"><i class="fa fa-envelope fa-5x"> </i></a>
+			</li>
+		</div> 
+	</div>
+	<!-- Footer/Credits Given --> 
+	<div class="credits">
+			<a>Theme by</a>
+			<a rel="cc:attributionURL" href="http://www.andreagalanti.it" property="dc:title">Andrea Galanti</a>
+			<a> modified by Amelia Yap under</a>	
+			<a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/">Creative Commons.</a>
+	</div>  
+	</div>
+			<!-- (cannot send over http in github - commenting out for now) 	
+			<form role="form" action="" method="post" >
+				<div class="col-md-6 col-md-6 col-md-offset-3">
+					<div class="form-group">
+						<label for="InputName">Your Name</label>
+						<div class="input-group">
+							<input type="text" class="form-control" name="InputName" id="InputName" placeholder="Enter Name" required>
+							<span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span>
+						</div>
+					</div>
+					
+					<div class="form-group">
+						<label for="InputEmail">Your Email</label>
+						<div class="input-group">
+							<input type="email" class="form-control" id="InputEmail" name="InputEmail" placeholder="Enter Email" required  >
+							<span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span>
+						</div>
+					</div>
+					
+					<div class="form-group">
+						<label for="InputMessage">Message</label>
+						<div class="input-group">
+							<textarea name="InputMessage" id="InputMessage" class="form-control" rows="5" required></textarea>
+							<span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span>
+						</div>
+					</div>
+					<input type="submit" name="submit" id="submit" value="submit" class="btn wow tada btn-embossed btn-primary pull-right">
+					</div>
+			</form> -->
+
+
+    <!-- JavaScript -->
+    <script src="js/jquery-1.10.2.js"></script>
+    <script src="js/bootstrap.js"></script>
+	<script src="js/script.js"></script>
+	<script src="js/fallingsnow_v6.js"></script>
+    <script src="js/flickity.pkgd.js"></script>
+
+	<!-- StikyMenu -->
+	<script src="js/stickUp.min.js"></script>
+	<script type="text/javascript">
+	  jQuery(function($) {
+		$(document).ready( function() {
+		  $('.navbar-default').stickUp();
+		  
+		});
+	  });
+	
+	</script>
+	<!-- Smoothscroll -->
+	<script type="text/javascript" src="js/jquery.corner.js"></script> 
+	<script src="js/wow.min.js"></script>
+	<script>
+	 new WOW().init();
+	</script>
+	<script src="js/classie.js"></script>
+	<script src="js/uiMorphingButton_inflow.js"></script>
+	<!-- Magnific Popup core JS file -->
+	<script src="js/jquery.magnific-popup.js"></script> 
+</body>
+
+</html>
