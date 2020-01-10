@@ -1,0 +1,9 @@
+body {
+    background-color: #1D1D1D;
+    padding: 0px;
+    margin: 0px;
+}
+#snowflakeContainer {
+    position: absolute;
+    pointer-events: none;
+}
